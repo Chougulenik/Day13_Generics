@@ -11,6 +11,8 @@ public class Main {
 		Float[] intFloat = {1.1f,2.2f,3.4f};
 		max.maxElement(intFloat);
 
+		String[] intString = {"cat","dog","animal"};
+		max.maxElement(intString);
 	}
 
 }
