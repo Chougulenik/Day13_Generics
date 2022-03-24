@@ -1,26 +1,13 @@
 package com.bridgelabz;
 
-public class Maximum {
+public class Maximum<E extends Comparable<E>> {
 	
-	public void maxElement(Integer[] intArray) {
-		for(int i=0; i<intArray.length-1; i++) {
-			if(intArray[i].compareTo(intArray[i+1]) == 1) {
-				intArray[i+1] = intArray[i];
-			}
-		}
-		System.out.println(intArray[intArray.length-1]);
+	private E[] intArray;
+	Maximum(E[] intArray) {
+		this.intArray = intArray;
 	}
 	
-	public void maxElement(Float[] intArray) {
-		for(int i=0; i<intArray.length-1; i++) {
-			if(intArray[i].compareTo(intArray[i+1]) == 1) {
-				intArray[i+1] = intArray[i];
-			}
-		}
-		System.out.println(intArray[intArray.length-1]);
-	}
-	
-	public void maxElement(String[] intArray) {
+	public void maxElement() {
 		for(int i=0; i<intArray.length-1; i++) {
 			if(intArray[i].compareTo(intArray[i+1]) == 1) {
 				intArray[i+1] = intArray[i];
