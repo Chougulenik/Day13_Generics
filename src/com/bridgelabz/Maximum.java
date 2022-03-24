@@ -2,17 +2,17 @@ package com.bridgelabz;
 
 public class Maximum<E extends Comparable<E>> {
 	
-	private E[] intArray;
-	Maximum(E[] intArray) {
-		this.intArray = intArray;
+	private E[] myArray;
+		Maximum(E[] myArray) {
+		this.myArray = myArray;
 	}
 	
 	public void maxElement() {
-		for(int i=0; i<intArray.length-1; i++) {
-			if(intArray[i].compareTo(intArray[i+1]) == 1) {
-				intArray[i+1] = intArray[i];
+		for(int i=0; i<myArray.length-1; i++) {
+			if(myArray[i].compareTo(myArray[i+1]) == 1) {
+				myArray[i+1] = myArray[i];
 			}
 		}
-		System.out.println(intArray[intArray.length-1]);
+		System.out.println(myArray[myArray.length-1]);
 	}
 }
