@@ -1,18 +1,27 @@
 package com.bridgelabz;
 
-public class Maximum<E extends Comparable<E>> {
-	
-	private E[] myArray;
-		Maximum(E[] myArray) {
-		this.myArray = myArray;
+
+public class Maximum<T extends Comparable<T>> {
+	T x, y, z;
+	public Maximum(T x, T y, T z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
 	}
 	
-	public void maxElement() {
-		for(int i=0; i<myArray.length-1; i++) {
-			if(myArray[i].compareTo(myArray[i+1]) == 1) {
-				myArray[i+1] = myArray[i];
-			}
-		}
-		System.out.println(myArray[myArray.length-1]);
+	private static <T extends Comparable> void getMaximum(T a, T b, T c) {
+		T max = a;
+		if (b.compareTo(a) > 0) {
+			max = b;
+	    }
+	    if (c.compareTo(max) > 0) {
+	        max = c;
+	    }
+	    //print maximum no and string
+	     System.out.println("Maximum :" + max);
 	}
+	
+	public void max() {
+		Maximum.getMaximum(x, y, z);
+	 }
 }
