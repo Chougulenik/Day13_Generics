@@ -8,9 +8,7 @@ public class Main {
 		Float[] b = {1.1f,2.2f,3.4f};
 		String[] c = {"cat","dog","animal"};
 		
-		new Maximum(a).maxElement();
-		new Maximum(b).maxElement();
-		new Maximum(c).maxElement();
+		Maximum obj = new Maximum(a,b,c);	
+		obj.maxElement();
 	}
-
 }
