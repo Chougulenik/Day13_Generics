@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+
 public class Maximum<E extends Comparable<E>, U extends Comparable<U>, T extends Comparable<T>> {
 	
 	private E[] myArray;
@@ -36,6 +37,5 @@ public class Maximum<E extends Comparable<E>, U extends Comparable<U>, T extends
 		System.out.println(myArray[myArray.length-1]);
 		System.out.println(myArray1[myArray1.length-1]);
 		System.out.println(myArray2[myArray2.length-1]);
-		
-	}
+	 }
 }
